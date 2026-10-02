@@ -1,0 +1,14 @@
+[
+  {
+    "id": "post-001",
+    "status": "pending",
+    "image_url": "https://raw.githubusercontent.com/<ton-user>/<ton-repo>/main/images/post-001.jpg",
+    "caption": "3 façons dont l'IA générative peut te faire gagner 2h par jour 🧠⚡\n\n1. Résumer automatiquement tes réunions\n2. Générer un premier jet de n'importe quel contenu\n3. Automatiser les tâches répétitives (comme ce post 👀)\n\n#IA #productivite #automatisation #intelligenceartificielle"
+  },
+  {
+    "id": "post-002",
+    "status": "pending",
+    "image_url": "https://raw.githubusercontent.com/<ton-user>/<ton-repo>/main/images/post-002.jpg",
+    "caption": "Le prompt parfait n'existe pas. Mais voici 3 règles qui changent tout :\n\n→ Donne du contexte, pas juste une instruction\n→ Montre un exemple du résultat attendu\n→ Itère, ne cherche pas la perfection du premier coup\n\n#promptengineering #IA #productivite"
+  }
+]
