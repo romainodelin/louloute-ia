@@ -20,5 +20,131 @@
     "caption": "Mythe : « L'IA ne se trompe jamais. » 🙅‍♀️\n\nRéalité : une IA générative peut inventer un chiffre, une source ou une citation… et te l'annoncer avec beaucoup d'aplomb. On appelle ça une « hallucination ».\n\nLe bon réflexe :\n→ Utilise-la pour rédiger, reformuler, structurer\n→ Vérifie à la source tout fait important (chiffre, date, nom, loi)\n→ Demande-lui ses sources, puis ouvre-les vraiment\n\nTu t'es déjà fait avoir ? Raconte en commentaire 👇\n\n#IA #IAgenerative #chatgpt #astucesIA #intelligenceartificielle #productivite",
     "instagram_media_id": "18103690634298652",
     "facebook_error": "Erreur API (400): {\"error\":{\"message\":\"Unsupported get request. Object with ID '1362880363576193~' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https:\\/\\/developers.facebook.com\\/docs\\/graph-api\",\"type\":\"G"
+  },
+  {
+    "id": "post-004",
+    "status": "pending",
+    "image_url": "https://raw.githubusercontent.com/romainodelin/louloute-ia/main/images/post-004.jpg",
+    "caption": "Un mail de 3 écrans ? Un rapport de 20 pages ? Laisse l'IA faire le tri ✨\n\nCopie ce prompt :\n« Résume ce texte en 5 points clés, puis donne-moi les 3 actions à retenir. Texte : [colle ton texte] »\n\nTu obtiens l'essentiel ET ce que tu dois faire. Relis quand même les points importants : c'est toi qui décides.\n\nEnregistre-le pour ton prochain pavé 📌\n\n#IA #promptengineering #chatgpt #productivite #astucesIA #gaindetemps"
+  },
+  {
+    "id": "post-005",
+    "status": "pending",
+    "image_url": "https://raw.githubusercontent.com/romainodelin/louloute-ia/main/images/post-005.jpg",
+    "caption": "3 mails que tu n'as plus besoin d'écrire de zéro 📨\n\n1. La relance polie quand personne ne répond\n2. Le refus clair, mais aimable\n3. La réponse à la question qu'on te pose 10 fois\n\nDonne-lui le contexte (à qui, pourquoi, ton souhaité), puis ajuste le brouillon avec tes mots.\n\nLequel tu testes en premier ? Dis-le en commentaire 👇\n\n#IA #productivite #gaindetemps #organisation #astucesIA #IAgenerative"
+  },
+  {
+    "id": "post-006",
+    "status": "pending",
+    "image_url": "https://raw.githubusercontent.com/romainodelin/louloute-ia/main/images/post-006.jpg",
+    "caption": "On entend « prompt » partout. Mais c'est quoi, au juste ? 🤔\n\nUn prompt, c'est simplement la consigne que tu écris à l'IA.\n\nImagine que tu briefes un stagiaire brillant mais qui ne te connaît pas : sans contexte, il devine. Avec un objectif, un exemple et un format attendu, il vise juste.\n\nSuis la page pour la suite de la série « L'IA expliquée » ✦\n\n#IA #intelligenceartificielle #promptengineering #IAgenerative #astucesIA"
+  },
+  {
+    "id": "post-007",
+    "status": "pending",
+    "image_url": "https://raw.githubusercontent.com/romainodelin/louloute-ia/main/images/post-007.jpg",
+    "caption": "Une réunion à animer dans 10 minutes ? Respire 😮‍💨\n\nCopie ce prompt :\n« Je dois animer une réunion de 30 min sur [sujet] avec [participants]. Propose un ordre du jour minuté et 3 questions pour faire avancer la décision. »\n\nTu arrives avec un déroulé clair et des questions qui font avancer.\n\nEnregistre-le pour ta prochaine réunion 📌\n\n#IA #productivite #promptengineering #organisation #astucesIA #chatgpt"
+  },
+  {
+    "id": "post-008",
+    "status": "pending",
+    "image_url": "https://raw.githubusercontent.com/romainodelin/louloute-ia/main/images/post-008.jpg",
+    "caption": "Mythe : « L'IA, c'est pour les développeurs. » 🙅‍♀️\n\nRéalité : les assistants comme ChatGPT, Claude ou Gemini se pilotent en langage courant. Tu écris ce que tu veux, comme à un collègue.\n\nLe bon point de départ :\n→ Une tâche simple que tu fais souvent\n→ Une consigne claire\n→ Tu ajustes la réponse jusqu'à ce qu'elle te convienne\n\nTu as commencé par quoi, toi ? 👇\n\n#IA #IAgenerative #intelligenceartificielle #astucesIA #productivite"
+  },
+  {
+    "id": "post-009",
+    "status": "pending",
+    "image_url": "https://raw.githubusercontent.com/romainodelin/louloute-ia/main/images/post-009.jpg",
+    "caption": "Ta to-do déborde ? L'IA peut t'aider à y voir clair ✅\n\n1. Découpe un gros projet en petites étapes concrètes\n2. Priorise ta liste selon l'urgence et l'importance\n3. Estime le temps de chaque tâche pour planifier ta journée\n\nColle ta liste telle quelle, même en vrac : elle s'occupe du rangement.\n\nEnregistre ce post pour lundi matin 📌\n\n#productivite #organisation #IA #gaindetemps #astucesIA #todolist"
+  },
+  {
+    "id": "post-010",
+    "status": "pending",
+    "image_url": "https://raw.githubusercontent.com/romainodelin/louloute-ia/main/images/post-010.jpg",
+    "caption": "LLM, trois lettres qu'on voit partout. On décode 🔍\n\nLLM = Large Language Model, ou « grand modèle de langage ».\n\nIl a appris sur d'énormes quantités de textes, et il génère sa réponse en prédisant la suite, morceau par morceau. C'est le moteur derrière ChatGPT, Claude ou Gemini.\n\nPense à l'autocomplétion de ton téléphone, en version très, très entraînée.\n\nUne notion à expliquer ? Propose-la en commentaire 👇\n\n#IA #intelligenceartificielle #LLM #IAgenerative #chatgpt"
+  },
+  {
+    "id": "post-011",
+    "status": "pending",
+    "image_url": "https://raw.githubusercontent.com/romainodelin/louloute-ia/main/images/post-011.jpg",
+    "caption": "Tu veux un texte sans fautes, mais qui sonne encore comme toi ? ✍️\n\nCopie ce prompt :\n« Corrige les fautes et fluidifie ce texte sans changer mon ton ni mon vocabulaire. Liste ensuite les modifications. Texte : [colle ton texte] »\n\nLa liste des modifs, c'est la clé : tu gardes la main sur chaque changement.\n\nEnregistre-le 📌\n\n#IA #promptengineering #ecriture #productivite #astucesIA #chatgpt"
+  },
+  {
+    "id": "post-012",
+    "status": "pending",
+    "image_url": "https://raw.githubusercontent.com/romainodelin/louloute-ia/main/images/post-012.jpg",
+    "caption": "Et si tu pouvais poser des questions à tes propres documents ? 📚\n\nNotebookLM (Google) fait exactement ça :\n1. Tu importes tes sources : PDF, notes, pages web…\n2. Tu poses tes questions\n3. Il répond en s'appuyant sur tes sources, avec des citations pour vérifier\n\nParfait pour réviser, préparer un dossier ou retrouver une info dans un long document. Évite d'y mettre des documents confidentiels.\n\nTu connaissais ? 👇\n\n#IA #outilsIA #NotebookLM #productivite #astucesIA #IAgenerative"
+  },
+  {
+    "id": "post-013",
+    "status": "pending",
+    "image_url": "https://raw.githubusercontent.com/romainodelin/louloute-ia/main/images/post-013.jpg",
+    "caption": "Des notes en vrac après une réunion ? On les transforme en actions 🗂️\n\nCopie ce prompt :\n« Voici mes notes en vrac. Range-les en 3 catégories, puis liste les actions avec un responsable et une échéance. Notes : [colle tes notes] »\n\nEn 30 secondes, tu as un plan clair à partager.\n\nEnregistre-le pour ta prochaine réunion 📌\n\n#IA #productivite #organisation #promptengineering #gaindetemps #astucesIA"
+  },
+  {
+    "id": "post-014",
+    "status": "pending",
+    "image_url": "https://raw.githubusercontent.com/romainodelin/louloute-ia/main/images/post-014.jpg",
+    "caption": "Mythe : « Un bon prompt, c'est un long prompt. » 🙅‍♀️\n\nRéalité : un prompt long mais flou donne une réponse floue. Ce qui fait la différence :\n→ Le contexte (qui, pour qui, pourquoi)\n→ L'objectif précis\n→ Le format attendu (liste, tableau, 100 mots…)\n\nLe test : si un collègue lisait ton prompt, saurait-il quoi faire ?\n\nEnregistre ce rappel 📌\n\n#promptengineering #IA #astucesIA #chatgpt #productivite"
+  },
+  {
+    "id": "post-015",
+    "status": "pending",
+    "image_url": "https://raw.githubusercontent.com/romainodelin/louloute-ia/main/images/post-015.jpg",
+    "caption": "3 réflexes pour arrêter de perdre du temps avec l'IA ⏱️\n\n1. Précise toujours le format voulu : tableau, liste, 100 mots…\n2. Garde tes meilleurs prompts dans une note, prêts à copier\n3. Si la réponse n'est pas parfaite, demande une correction ciblée plutôt que de tout relancer\n\nTon réflexe à toi ? Partage-le en commentaire 👇\n\n#IA #productivite #gaindetemps #astucesIA #promptengineering #organisation"
+  },
+  {
+    "id": "post-016",
+    "status": "pending",
+    "image_url": "https://raw.githubusercontent.com/romainodelin/louloute-ia/main/images/post-016.jpg",
+    "caption": "Ton IA « oublie » ce que tu lui as dit au début ? Voilà pourquoi 🧠\n\nChaque modèle a une fenêtre de contexte : la quantité de texte qu'il peut prendre en compte en même temps dans une conversation.\n\nDans une très longue discussion, les premiers échanges peuvent être moins bien pris en compte.\n\nLe bon réflexe : récapitule l'essentiel de temps en temps, ou ouvre une nouvelle conversation avec un résumé.\n\nSuis la série « L'IA expliquée » ✦\n\n#IA #intelligenceartificielle #IAgenerative #astucesIA #chatgpt"
+  },
+  {
+    "id": "post-017",
+    "status": "pending",
+    "image_url": "https://raw.githubusercontent.com/romainodelin/louloute-ia/main/images/post-017.jpg",
+    "caption": "Envie de comprendre un sujet rapidement, sans y passer la soirée ? 🎓\n\nCopie ce prompt :\n« Explique-moi [sujet] comme à un débutant, en 5 étapes, avec un exemple concret. Termine par 3 questions pour vérifier que j'ai compris. »\n\nLe quiz final t'oblige à reformuler : c'est là que tu retiens. Pour les sujets pointus, vérifie avec une source fiable.\n\nTu testes sur quel sujet ? 👇\n\n#IA #apprendre #promptengineering #astucesIA #chatgpt #productivite"
+  },
+  {
+    "id": "post-018",
+    "status": "pending",
+    "image_url": "https://raw.githubusercontent.com/romainodelin/louloute-ia/main/images/post-018.jpg",
+    "caption": "Tu veux une réponse ET savoir d'où elle vient ? 🔎\n\nPerplexity est un moteur de réponse :\n1. Il cherche sur le web avant de répondre\n2. Il cite ses sources avec des liens\n3. Tu peux creuser avec des questions de suivi\n\nLe bon réflexe reste le même : ouvre les sources pour vérifier les infos importantes.\n\nEnregistre ce post 📌\n\n#IA #outilsIA #Perplexity #recherche #astucesIA #productivite"
+  },
+  {
+    "id": "post-019",
+    "status": "pending",
+    "image_url": "https://raw.githubusercontent.com/romainodelin/louloute-ia/main/images/post-019.jpg",
+    "caption": "Une discussion délicate qui approche ? Entraîne-toi d'abord avec l'IA 🎭\n\nCopie ce prompt :\n« Joue le rôle de [personne] qui n'est pas d'accord avec [ma proposition]. Pose-moi ses objections une par une, puis fais-moi un retour sur mes réponses. »\n\nTu arrives préparé·e aux objections, avec des réponses déjà testées.\n\nEnregistre-le 📌\n\n#IA #promptengineering #communication #productivite #astucesIA #chatgpt"
+  },
+  {
+    "id": "post-020",
+    "status": "pending",
+    "image_url": "https://raw.githubusercontent.com/romainodelin/louloute-ia/main/images/post-020.jpg",
+    "caption": "Le dimanche soir, on délègue un peu à l'IA 🛋️\n\n1. Les menus de la semaine et la liste de courses qui va avec\n2. Ton agenda de la semaine, organisé par priorité\n3. Le mail récap du lundi matin, prêt à envoyer\n\nDonne-lui tes contraintes (budget, horaires, rendez-vous) pour un résultat vraiment utile.\n\nLequel te ferait gagner le plus de temps ? 👇\n\n#IA #organisation #productivite #gaindetemps #astucesIA #IAgenerative"
+  },
+  {
+    "id": "post-021",
+    "status": "pending",
+    "image_url": "https://raw.githubusercontent.com/romainodelin/louloute-ia/main/images/post-021.jpg",
+    "caption": "Mythe : « Ce que je tape dans l'IA reste entre elle et moi. » 🙅‍♀️\n\nRéalité : selon l'outil, ton abonnement et tes réglages, tes conversations peuvent être conservées, relues ou utilisées pour améliorer les modèles.\n\nLes bons réflexes :\n→ Pas de mots de passe, de données clients ou d'infos confidentielles\n→ Anonymise avant de coller un document\n→ Va voir les paramètres de confidentialité de ton outil\n\nPartage ce post à quelqu'un qui colle tout dans ChatGPT 😅\n\n#IA #confidentialite #intelligenceartificielle #astucesIA #chatgpt"
+  },
+  {
+    "id": "post-022",
+    "status": "pending",
+    "image_url": "https://raw.githubusercontent.com/romainodelin/louloute-ia/main/images/post-022.jpg",
+    "caption": "IA générative : on remet les bases 🧩\n\nC'est une IA capable de créer du contenu nouveau à partir d'une consigne : du texte, des images, du son, du code…\n\nLa différence avec d'autres IA ? Un filtre anti-spam classe tes mails. Une IA générative, elle, peut t'écrire la réponse.\n\nCréer ne veut pas dire avoir raison : on relit toujours ✦\n\n#IA #IAgenerative #intelligenceartificielle #astucesIA #chatgpt"
+  },
+  {
+    "id": "post-023",
+    "status": "pending",
+    "image_url": "https://raw.githubusercontent.com/romainodelin/louloute-ia/main/images/post-023.jpg",
+    "caption": "Tu ne sais pas comment formuler ta demande ? Laisse l'IA te poser les questions 🪄\n\nCopie ce prompt :\n« Voici ce que je veux obtenir : [objectif]. Pose-moi d'abord les questions nécessaires, puis rédige le prompt idéal pour l'obtenir. »\n\nElle t'aide à préciser ton besoin, puis te donne un prompt prêt à réutiliser.\n\nC'est mon préféré. Enregistre-le 📌\n\n#promptengineering #IA #chatgpt #astucesIA #productivite #IAgenerative"
+  },
+  {
+    "id": "post-024",
+    "status": "pending",
+    "image_url": "https://raw.githubusercontent.com/romainodelin/louloute-ia/main/images/post-024.jpg",
+    "caption": "Vendredi, 17 h. On boucle la semaine proprement ✔️\n\nColle tes notes de la semaine et demande à l'IA de :\n1. Résumer ce que tu as accompli\n2. Lister ce qui reste à faire, par priorité\n3. Rédiger ton point d'avancement en 5 lignes\n\nLundi, tu repars avec une vision claire.\n\nBon week-end ✦ Enregistre ce post pour vendredi prochain 📌\n\n#productivite #organisation #IA #gaindetemps #astucesIA"
   }
 ]

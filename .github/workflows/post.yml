@@ -1,5 +1,5 @@
 # Programme la publication automatique d'un post Instagram depuis la file
-# d'attente (content_queue.json), 3 fois par semaine (lun/mer/ven à 9h Paris).
+# d'attente (content_queue.json), 3 fois par jour (8h, 12h30, 19h heure de Paris d'été).
 # Entièrement gratuit : GitHub Actions offre des minutes illimitées sur repo public
 # (et 2000 min/mois gratuites sur repo privé).
 
@@ -7,8 +7,11 @@ name: Auto-post Instagram
 
 on:
   schedule:
-    # Horaires en UTC : 8h UTC = 9h/10h Paris selon heure d'été/hiver
-    - cron: "0 8 * * 1,3,5"
+    # Horaires en UTC. Heure d'été (CEST) : 8h, 12h30, 19h à Paris.
+    # Heure d'hiver (à partir du 25 octobre) : 7h, 11h30, 18h, sauf si on décale d'une heure.
+    - cron: "0 6 * * *"
+    - cron: "30 10 * * *"
+    - cron: "0 17 * * *"
   workflow_dispatch: {} # permet de déclencher manuellement depuis l'onglet Actions
 
 permissions:
