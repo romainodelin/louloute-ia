@@ -23,9 +23,11 @@
   },
   {
     "id": "post-004",
-    "status": "pending",
+    "status": "published",
     "image_url": "https://raw.githubusercontent.com/romainodelin/louloute-ia/main/images/post-004.jpg",
-    "caption": "Un mail de 3 écrans ? Un rapport de 20 pages ? Laisse l'IA faire le tri ✨\n\nCopie ce prompt :\n« Résume ce texte en 5 points clés, puis donne-moi les 3 actions à retenir. Texte : [colle ton texte] »\n\nTu obtiens l'essentiel ET ce que tu dois faire. Relis quand même les points importants : c'est toi qui décides.\n\nEnregistre-le pour ton prochain pavé 📌\n\n#IA #promptengineering #chatgpt #productivite #astucesIA #gaindetemps"
+    "caption": "Un mail de 3 écrans ? Un rapport de 20 pages ? Laisse l'IA faire le tri ✨\n\nCopie ce prompt :\n« Résume ce texte en 5 points clés, puis donne-moi les 3 actions à retenir. Texte : [colle ton texte] »\n\nTu obtiens l'essentiel ET ce que tu dois faire. Relis quand même les points importants : c'est toi qui décides.\n\nEnregistre-le pour ton prochain pavé 📌\n\n#IA #promptengineering #chatgpt #productivite #astucesIA #gaindetemps",
+    "instagram_media_id": "18110907146597868",
+    "facebook_error": "Page 1362880363576193~ absente des Pages accessibles par le token : [('1362880363576193', 'Louloute.ia')]"
   },
   {
     "id": "post-005",
