@@ -19,12 +19,15 @@ Pré-requis (voir README.md) :
 Variables d'environnement attendues (stockées en secrets GitHub Actions) :
   - IG_USER_ID        : l'ID du compte Instagram Business (pas le @pseudo)
   - IG_ACCESS_TOKEN   : le token d'accès longue durée
+  - FB_PAGE_ID        : (optionnel) l'ID de la Page Facebook. Si présent, le post est
+                        aussi publié sur la Page (nécessite pages_manage_posts).
 
 Usage :
   python post_to_instagram.py
 """
 
 import json
+import re
 import os
 import sys
 import time
@@ -102,6 +105,36 @@ def publish_post(ig_user_id: str, access_token: str, image_url: str, caption: st
     return media_id
 
 
+def http_get(url: str, params: dict) -> dict:
+    try:
+        with request.urlopen(f"{url}?{parse.urlencode(params)}", timeout=30) as resp:
+            return json.loads(resp.read().decode())
+    except error.HTTPError as e:
+        raise RuntimeError(f"Erreur API ({e.code}): {e.read().decode()}") from e
+
+
+def facebook_caption(caption: str) -> str:
+    """Retire les hashtags (peu utiles sur Facebook) et les lignes vides en trop."""
+    text = re.sub(r"(?m)^\s*(#\S+\s*)+$", "", caption)
+    return re.sub(r"\n{3,}", "\n\n", text).strip()
+
+
+def publish_facebook(page_id: str, user_token: str, image_url: str, caption: str) -> str:
+    # Le token utilisateur permet d'obtenir le token de la Page, requis pour publier
+    page = http_get(f"{GRAPH_BASE}/{page_id}", {"fields": "access_token", "access_token": user_token})
+    page_token = page.get("access_token")
+    if not page_token:
+        raise RuntimeError(f"Token de Page introuvable : {page}")
+    resp = http_post(
+        f"{GRAPH_BASE}/{page_id}/photos",
+        {"url": image_url, "message": facebook_caption(caption), "access_token": page_token},
+    )
+    post_id = resp.get("post_id") or resp.get("id")
+    if not post_id:
+        raise RuntimeError(f"Échec de publication Facebook : {resp}")
+    return post_id
+
+
 def main() -> int:
     ig_user_id = os.environ.get("IG_USER_ID")
     access_token = os.environ.get("IG_ACCESS_TOKEN")
@@ -150,6 +183,18 @@ def main() -> int:
     })
 
     print(f"Publié avec succès. ID média Instagram : {media_id}")
+
+    # Facebook : un échec ici ne bloque pas Instagram (déjà publié)
+    page_id = os.environ.get("FB_PAGE_ID")
+    if page_id:
+        try:
+            fb_id = publish_facebook(page_id, access_token, next_post["image_url"], next_post["caption"])
+            next_post["facebook_post_id"] = fb_id
+            print(f"Publié aussi sur Facebook : {fb_id}")
+        except Exception as exc:
+            next_post["facebook_error"] = str(exc)[:300]
+            print(f"AVERTISSEMENT Facebook : {exc}")
+        save_queue(queue)
     return 0
 
 
