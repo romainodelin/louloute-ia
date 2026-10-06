@@ -15,8 +15,10 @@
   },
   {
     "id": "post-003",
-    "status": "pending",
+    "status": "published",
     "image_url": "https://raw.githubusercontent.com/romainodelin/louloute-ia/main/images/post-003.jpg",
-    "caption": "Mythe : « L'IA ne se trompe jamais. » 🙅‍♀️\n\nRéalité : une IA générative peut inventer un chiffre, une source ou une citation… et te l'annoncer avec beaucoup d'aplomb. On appelle ça une « hallucination ».\n\nLe bon réflexe :\n→ Utilise-la pour rédiger, reformuler, structurer\n→ Vérifie à la source tout fait important (chiffre, date, nom, loi)\n→ Demande-lui ses sources, puis ouvre-les vraiment\n\nTu t'es déjà fait avoir ? Raconte en commentaire 👇\n\n#IA #IAgenerative #chatgpt #astucesIA #intelligenceartificielle #productivite"
+    "caption": "Mythe : « L'IA ne se trompe jamais. » 🙅‍♀️\n\nRéalité : une IA générative peut inventer un chiffre, une source ou une citation… et te l'annoncer avec beaucoup d'aplomb. On appelle ça une « hallucination ».\n\nLe bon réflexe :\n→ Utilise-la pour rédiger, reformuler, structurer\n→ Vérifie à la source tout fait important (chiffre, date, nom, loi)\n→ Demande-lui ses sources, puis ouvre-les vraiment\n\nTu t'es déjà fait avoir ? Raconte en commentaire 👇\n\n#IA #IAgenerative #chatgpt #astucesIA #intelligenceartificielle #productivite",
+    "instagram_media_id": "18103690634298652",
+    "facebook_error": "Erreur API (400): {\"error\":{\"message\":\"Unsupported get request. Object with ID '1362880363576193~' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https:\\/\\/developers.facebook.com\\/docs\\/graph-api\",\"type\":\"G"
   }
 ]
