@@ -121,10 +121,13 @@ def facebook_caption(caption: str) -> str:
 
 def publish_facebook(page_id: str, user_token: str, image_url: str, caption: str) -> str:
     # Le token utilisateur permet d'obtenir le token de la Page, requis pour publier
-    page = http_get(f"{GRAPH_BASE}/{page_id}", {"fields": "access_token", "access_token": user_token})
-    page_token = page.get("access_token")
+    # On passe par /me/accounts : renvoie les Pages accessibles avec leur token
+    accounts = http_get(f"{GRAPH_BASE}/me/accounts", {"fields": "id,name,access_token", "access_token": user_token})
+    pages = accounts.get("data", [])
+    page_token = next((pg.get("access_token") for pg in pages if pg.get("id") == page_id.strip()), None)
     if not page_token:
-        raise RuntimeError(f"Token de Page introuvable : {page}")
+        visibles = [(pg.get("id"), pg.get("name")) for pg in pages]
+        raise RuntimeError(f"Page {page_id.strip()} absente des Pages accessibles par le token : {visibles}")
     resp = http_post(
         f"{GRAPH_BASE}/{page_id}/photos",
         {"url": image_url, "message": facebook_caption(caption), "access_token": page_token},
