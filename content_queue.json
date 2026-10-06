@@ -2,13 +2,13 @@
   {
     "id": "post-001",
     "status": "pending",
-    "image_url": "https://raw.githubusercontent.com/<ton-user>/<ton-repo>/main/images/post-001.jpg",
-    "caption": "3 façons dont l'IA générative peut te faire gagner 2h par jour 🧠⚡\n\n1. Résumer automatiquement tes réunions\n2. Générer un premier jet de n'importe quel contenu\n3. Automatiser les tâches répétitives (comme ce post 👀)\n\n#IA #productivite #automatisation #intelligenceartificielle"
+    "image_url": "https://raw.githubusercontent.com/romainodelin/louloute-ia/main/images/post-001.jpg",
+    "caption": "3 tâches à confier à l'IA dès demain (et récupérer du temps pour le reste) ✨\n\n1. Résumer un compte-rendu de réunion en 5 points\n2. Écrire le premier jet d'un mail ou d'un post\n3. Transformer tes notes en liste d'actions\n\nL'IA fait le brouillon, toi tu relis et tu ajustes. C'est là que tu gagnes du temps.\n\nEnregistre ce post pour l'essayer demain 📌\n\n#IA #IAgenerative #productivite #gaindetemps #astucesIA #organisation"
   },
   {
     "id": "post-002",
     "status": "pending",
-    "image_url": "https://raw.githubusercontent.com/<ton-user>/<ton-repo>/main/images/post-002.jpg",
-    "caption": "Le prompt parfait n'existe pas. Mais voici 3 règles qui changent tout :\n\n→ Donne du contexte, pas juste une instruction\n→ Montre un exemple du résultat attendu\n→ Itère, ne cherche pas la perfection du premier coup\n\n#promptengineering #IA #productivite"
+    "image_url": "https://raw.githubusercontent.com/romainodelin/louloute-ia/main/images/post-002.jpg",
+    "caption": "Le prompt parfait n'existe pas. Mais ces 3 règles changent tout 👇\n\n→ Donne du contexte, pas juste une consigne\n→ Montre un exemple du résultat attendu\n→ Itère : la première réponse est un brouillon\n\nTu as une règle à ajouter ? Dis-la-moi en commentaire 💬\n\n#promptengineering #IA #chatgpt #astucesIA #productivite #IAgenerative"
   }
 ]
