@@ -1,7 +1,8 @@
 [
   {
     "id": "reel-001-mails",
-    "status": "pending"
+    "status": "pending",
+    "tentatives": 1
   },
   {
     "id": "reel-002-reunions",
