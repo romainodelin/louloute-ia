@@ -1,0 +1,52 @@
+{
+  "id": "reel-005-entretien",
+  "preset": "loutre_cartoon",
+  "legende": "Prépare ton entretien avec l'IA comme un pro 🎯\n\n1️⃣ Les questions probables\n2️⃣ La simulation d'entretien\n3️⃣ Tes questions à toi\n\n📌 Enregistre pour plus tard\n💬 Tu as un entretien bientôt ?\n\n#IA #chatgpt #entretien #emploi #astucesIA #carriere",
+  "scenes": [
+    {
+      "type": "titre",
+      "voix": "Un entretien d'embauche cette semaine ?",
+      "pose": "profil",
+      "ecran": "Un entretien\ncette semaine ?"
+    },
+    {
+      "type": "titre",
+      "voix": "Utilise l'I.A. comme coach. Trois prompts.",
+      "pose": "etincelle",
+      "ecran": "L'IA comme\ncoach d'entretien"
+    },
+    {
+      "type": "prompt",
+      "voix": "Un : tu colles l'offre d'emploi, et tu demandes ça.",
+      "pose": "clavier",
+      "etiquette": "PROMPT 1 · LES QUESTIONS",
+      "prompt": "À partir de cette offre, liste les 8 questions qu'un recruteur a le plus de chances de me poser, de la plus probable à la moins probable."
+    },
+    {
+      "type": "prompt",
+      "voix": "Deux : tu t'entraînes. Pour de vrai.",
+      "pose": "clavier",
+      "etiquette": "PROMPT 2 · LA SIMULATION",
+      "prompt": "Joue le recruteur. Pose-moi une question à la fois, attends ma réponse, puis donne-moi un retour honnête : ce qui marche, ce qui manque."
+    },
+    {
+      "type": "titre",
+      "voix": "Et là, le jour J, t'as déjà répondu dix fois.",
+      "pose": "emerveillee",
+      "ecran": "Le jour J,\nt'as déjà répété"
+    },
+    {
+      "type": "prompt",
+      "voix": "Et trois : tes questions à toi. Ça fait toute la différence.",
+      "pose": "profil",
+      "etiquette": "PROMPT 3 · TES QUESTIONS",
+      "prompt": "Propose 5 questions intelligentes à poser à la fin de l'entretien, qui montrent que j'ai compris les enjeux du poste."
+    },
+    {
+      "type": "titre",
+      "voix": "Enregistre ce reel, et bonne chance pour ton entretien !",
+      "pose": "pouce-leve",
+      "ecran": "Enregistre\net bonne chance"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "reel-007-frigo",
+  "preset": "loutre_cartoon",
+  "legende": "Plus jamais « on mange quoi ce soir ? » 🍳\n\n1️⃣ La recette avec ce qu'il reste\n2️⃣ La version express\n3️⃣ La liste de courses de la semaine\n\n📌 Enregistre pour plus tard\n💬 C'est quoi le pire reste de ton frigo ?\n\n#IA #chatgpt #cuisine #antigaspi #astucesIA #organisation",
+  "scenes": [
+    {
+      "type": "titre",
+      "voix": "Ce soir, on mange quoi ?",
+      "pose": "profil",
+      "ecran": "Ce soir,\non mange quoi ?"
+    },
+    {
+      "type": "titre",
+      "voix": "Ouvre ton frigo... l'I.A. s'occupe du reste.",
+      "pose": "etincelle",
+      "ecran": "Ouvre ton frigo,\nl'IA fait le reste"
+    },
+    {
+      "type": "prompt",
+      "voix": "Un : tu listes ce qu'il te reste. Même les trucs bizarres.",
+      "pose": "clavier",
+      "etiquette": "PROMPT 1 · LES RESTES",
+      "prompt": "Il me reste : 2 courgettes, 3 œufs, du riz, un fond de crème. Propose 3 recettes simples avec ça, sans rien acheter."
+    },
+    {
+      "type": "prompt",
+      "voix": "Deux : t'as pas le temps ? Tu le dis.",
+      "pose": "clavier",
+      "etiquette": "PROMPT 2 · EXPRESS",
+      "prompt": "Choisis la recette la plus rapide et donne-la en 5 étapes, prête en 20 minutes maximum, avec une seule poêle."
+    },
+    {
+      "type": "titre",
+      "voix": "Et là, zéro gaspi, et le dîner est prêt.",
+      "pose": "emerveillee",
+      "ecran": "Zéro gaspi,\ndîner prêt"
+    },
+    {
+      "type": "prompt",
+      "voix": "Et trois : tu anticipes toute la semaine.",
+      "pose": "profil",
+      "etiquette": "PROMPT 3 · LA SEMAINE",
+      "prompt": "Propose 5 dîners simples pour la semaine et la liste de courses correspondante, classée par rayon du supermarché."
+    },
+    {
+      "type": "titre",
+      "voix": "Enregistre ce reel, ton toi de vingt heures te remerciera.",
+      "pose": "pouce-leve",
+      "ecran": "Ton toi de 20 h\nte remerciera"
+    }
+  ]
+}

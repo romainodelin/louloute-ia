@@ -3,3 +3,9 @@ __pycache__/
 *.pyc
 .env
 .DS_Store
+# Fichiers lourds / locaux à ne pas envoyer sur GitHub
+voix/.venv/
+voix/.venv.nosync/
+echantillons_voix/
+reels/sortie/
+*.wav

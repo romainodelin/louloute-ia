@@ -1,0 +1,52 @@
+{
+  "id": "reel-003-pdf",
+  "preset": "loutre_cartoon",
+  "legende": "Un PDF de 40 pages ? Lis l'essentiel en 2 minutes 📄\n\n1️⃣ Le résumé en 5 points\n2️⃣ Les questions qu'il faut poser\n3️⃣ La vérification des sources\n\n📌 Enregistre pour plus tard\n💬 C'est quoi le dernier doc trop long que tu as reçu ?\n\n#IA #chatgpt #productivite #lecture #astucesIA #gaindetemps",
+  "scenes": [
+    {
+      "type": "titre",
+      "voix": "Un PDF de quarante pages à lire pour demain ?",
+      "pose": "profil",
+      "ecran": "Un PDF de 40 pages\npour demain ?"
+    },
+    {
+      "type": "titre",
+      "voix": "T'inquiète... trois prompts, et t'as l'essentiel.",
+      "pose": "etincelle",
+      "ecran": "3 prompts\n= l'essentiel"
+    },
+    {
+      "type": "prompt",
+      "voix": "Un : tu glisses le PDF, et tu demandes le résumé utile.",
+      "pose": "clavier",
+      "etiquette": "PROMPT 1 · L'ESSENTIEL",
+      "prompt": "Résume ce document en 5 points. Pour chaque point, indique la page où il se trouve. Termine par ce que je dois retenir si je n'ai qu'une minute."
+    },
+    {
+      "type": "prompt",
+      "voix": "Deux : tu le fais travailler pour toi.",
+      "pose": "clavier",
+      "etiquette": "PROMPT 2 · LES BONNES QUESTIONS",
+      "prompt": "Quelles sont les 3 questions les plus importantes à poser à l'auteur de ce document ? Explique pourquoi chacune compte."
+    },
+    {
+      "type": "titre",
+      "voix": "Et là, en réunion, t'as l'air d'avoir tout lu.",
+      "pose": "emerveillee",
+      "ecran": "T'as l'air\nd'avoir tout lu"
+    },
+    {
+      "type": "prompt",
+      "voix": "Et trois, le plus important : tu vérifies. L'I.A. peut se tromper.",
+      "pose": "profil",
+      "etiquette": "PROMPT 3 · LA VÉRIF",
+      "prompt": "Pour chaque point de ton résumé, cite la phrase exacte du document qui le justifie. Si tu n'en trouves pas, dis-le."
+    },
+    {
+      "type": "titre",
+      "voix": "Enregistre ce reel, et ton prochain PDF te fera plus peur.",
+      "pose": "pouce-leve",
+      "ecran": "Enregistre\npour ton prochain PDF"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "reel-001-mails",
+  "legende": "3 prompts pour traiter tes mails en 10 minutes au lieu d'une heure 📬\n\n1️⃣ Le tri : urgent / cette semaine / à ignorer\n2️⃣ La réponse : ton intention en 3 mots, l'IA rédige\n3️⃣ Le suivi : toutes les actions du fil, avec dates et responsables\n\n📌 Enregistre pour demain matin\n💬 Lequel tu testes en premier ?\n\n#chatgpt #ia #productivite #astucesia #organisation",
+  "scenes": [
+    {
+      "type": "titre",
+      "voix": "Une heure par jour sur tes mails ?",
+      "ecran": "1 heure par jour\nsur tes mails ?",
+      "pose": "profil"
+    },
+    {
+      "type": "titre",
+      "voix": "Bon... avec ces trois prompts, t'as fini en dix minutes.",
+      "ecran": "3 prompts\n= 10 minutes",
+      "pose": "etincelle"
+    },
+    {
+      "type": "prompt",
+      "voix": "Un : le tri. Tu colles tes mails non lus, et tu demandes ça.",
+      "etiquette": "PROMPT 1 · LE TRI",
+      "prompt": "Classe ces mails en 3 groupes : urgent, à traiter cette semaine, à ignorer. Pour chacun, résume en une ligne ce qu'on attend de moi.",
+      "pose": "clavier"
+    },
+    {
+      "type": "titre",
+      "voix": "Et là, en dix secondes, tu sais par où commencer.",
+      "ecran": "Tu sais par où\ncommencer",
+      "pose": "emerveillee"
+    },
+    {
+      "type": "prompt",
+      "voix": "Deux : la réponse. Tu donnes juste ton intention, en trois mots. Il fait le reste.",
+      "etiquette": "PROMPT 2 · LA RÉPONSE",
+      "prompt": "Réponds à ce mail. Mon intention : refuser poliment et proposer jeudi. 4 phrases maximum, ton cordial, garde le même niveau de formalité que l'expéditeur.",
+      "pose": "clavier"
+    },
+    {
+      "type": "prompt",
+      "voix": "Et trois : le suivi... Franchement, presque personne ne l'utilise.",
+      "etiquette": "PROMPT 3 · LE SUIVI",
+      "prompt": "Liste toutes les actions que ce fil de mails me demande, sous forme de tableau : action, personne concernée, date limite.",
+      "pose": "profil"
+    },
+    {
+      "type": "titre",
+      "voix": "Allez, enregistre ce reel. Et dis-moi en commentaire lequel tu testes demain !",
+      "ecran": "Enregistre\npour demain matin",
+      "pose": "pouce-leve"
+    }
+  ],
+  "preset": "loutre_cartoon"
+}

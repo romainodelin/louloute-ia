@@ -1,0 +1,34 @@
+[
+  {
+    "id": "reel-001-mails",
+    "status": "pending"
+  },
+  {
+    "id": "reel-002-reunions",
+    "status": "pending"
+  },
+  {
+    "id": "reel-003-pdf",
+    "status": "pending"
+  },
+  {
+    "id": "reel-004-semaine",
+    "status": "pending"
+  },
+  {
+    "id": "reel-005-entretien",
+    "status": "pending"
+  },
+  {
+    "id": "reel-006-apprendre",
+    "status": "pending"
+  },
+  {
+    "id": "reel-007-frigo",
+    "status": "pending"
+  },
+  {
+    "id": "reel-008-linkedin",
+    "status": "pending"
+  }
+]

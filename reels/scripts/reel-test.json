@@ -1,0 +1,12 @@
+{
+  "id": "reel-test",
+  "voix": "fr-FR-VivienneMultilingualNeural",
+  "scenes": [
+    {"voix": "Tu passes encore une heure sur tes mails ?", "ecran": "1 heure\nsur tes mails ?", "pose": "profil"},
+    {"voix": "Franchement, moi aussi avant... Maintenant, j'utilise trois prompts.", "ecran": "3 prompts\nqui changent tout", "pose": "etincelle"},
+    {"voix": "Le premier : colle ton mail et demande, résume-moi ça en trois points.", "ecran": "Prompt n°1\n« Résume en 3 points »", "pose": "clavier"},
+    {"voix": "Le deuxième : rédige une réponse courte et polie, en gardant mon ton.", "ecran": "Prompt n°2\n« Réponds avec mon ton »", "pose": "clavier"},
+    {"voix": "Et le troisième : liste-moi les actions à faire, avec une date.", "ecran": "Prompt n°3\n« Liste les actions »", "pose": "emerveillee"},
+    {"voix": "Enregistre ce reel, tu me remercieras demain !", "ecran": "Enregistre\npour plus tard", "pose": "pouce-leve"}
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "reel-002-reunions",
+  "preset": "loutre_cartoon",
+  "legende": "Ta réunion résumée en 30 secondes 🗒️\n\n1️⃣ Le compte-rendu propre\n2️⃣ Les décisions et qui fait quoi\n3️⃣ Le mail de suivi prêt à envoyer\n\n📌 Enregistre pour plus tard\n💬 Tu prends encore tes notes à la main ?\n\n#IA #chatgpt #productivite #reunion #astucesIA #gaindetemps",
+  "scenes": [
+    {
+      "type": "titre",
+      "voix": "Tu sors de réunion, et t'as rien noté ?",
+      "pose": "profil",
+      "ecran": "Tu sors de réunion\net t'as rien noté ?"
+    },
+    {
+      "type": "titre",
+      "voix": "Bon... trois prompts, et ton compte-rendu est fait.",
+      "pose": "etincelle",
+      "ecran": "3 prompts\n= compte-rendu fait"
+    },
+    {
+      "type": "prompt",
+      "voix": "Un : tu colles la transcription, ou tes notes en vrac, et tu demandes ça.",
+      "pose": "clavier",
+      "etiquette": "PROMPT 1 · LE RÉSUMÉ",
+      "prompt": "Résume cette réunion en 5 points clés maximum. Une phrase par point, sans jargon."
+    },
+    {
+      "type": "prompt",
+      "voix": "Deux : les décisions. C'est ce que tout le monde oublie.",
+      "pose": "clavier",
+      "etiquette": "PROMPT 2 · QUI FAIT QUOI",
+      "prompt": "Liste les décisions prises et les actions à mener, sous forme de tableau : action, responsable, échéance. Signale ce qui n'a pas de responsable."
+    },
+    {
+      "type": "titre",
+      "voix": "Et là, plus personne ne peut dire, c'était pas moi.",
+      "pose": "emerveillee",
+      "ecran": "Fini les\n« c'était pas moi »"
+    },
+    {
+      "type": "prompt",
+      "voix": "Et trois : le mail de suivi, prêt à envoyer.",
+      "pose": "profil",
+      "etiquette": "PROMPT 3 · LE SUIVI",
+      "prompt": "Rédige le mail de suivi de cette réunion pour les participants : remerciements, décisions, actions avec responsables et dates. Ton professionnel et chaleureux, 10 lignes maximum."
+    },
+    {
+      "type": "titre",
+      "voix": "Allez, enregistre ce reel pour ta prochaine réunion !",
+      "pose": "pouce-leve",
+      "ecran": "Enregistre\npour ta prochaine réu"
+    }
+  ]
+}

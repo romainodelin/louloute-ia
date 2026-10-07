@@ -1,0 +1,52 @@
+{
+  "id": "reel-006-apprendre",
+  "preset": "loutre_cartoon",
+  "legende": "Comprendre n'importe quel sujet en 5 minutes 🧠\n\n1️⃣ L'explication simple\n2️⃣ L'analogie qui fait tilt\n3️⃣ Le mini quiz\n\n📌 Enregistre pour plus tard\n💬 Quel sujet tu veux enfin comprendre ?\n\n#IA #chatgpt #apprendre #culture #astucesIA #productivite",
+  "scenes": [
+    {
+      "type": "titre",
+      "voix": "Un sujet que t'as jamais vraiment compris ?",
+      "pose": "profil",
+      "ecran": "Un sujet que t'as\njamais compris ?"
+    },
+    {
+      "type": "titre",
+      "voix": "Trois prompts, et ça fait enfin tilt.",
+      "pose": "etincelle",
+      "ecran": "3 prompts\net ça fait tilt"
+    },
+    {
+      "type": "prompt",
+      "voix": "Un : l'explication. Mais version simple.",
+      "pose": "clavier",
+      "etiquette": "PROMPT 1 · SIMPLE",
+      "prompt": "Explique-moi [le sujet] comme si j'avais 12 ans, en 5 phrases maximum. Pas de jargon, ou alors explique-le."
+    },
+    {
+      "type": "prompt",
+      "voix": "Deux : l'analogie. C'est elle qui reste en tête.",
+      "pose": "clavier",
+      "etiquette": "PROMPT 2 · L'ANALOGIE",
+      "prompt": "Donne-moi une analogie avec la vie de tous les jours pour comprendre [le sujet]. Puis dis-moi où l'analogie a ses limites."
+    },
+    {
+      "type": "titre",
+      "voix": "Et là, tu peux l'expliquer à quelqu'un d'autre.",
+      "pose": "emerveillee",
+      "ecran": "Tu peux même\nl'expliquer"
+    },
+    {
+      "type": "prompt",
+      "voix": "Et trois : le quiz. Pour vérifier que t'as vraiment compris.",
+      "pose": "profil",
+      "etiquette": "PROMPT 3 · LE QUIZ",
+      "prompt": "Pose-moi 3 questions pour vérifier que j'ai compris [le sujet]. Une à la fois. Corrige-moi gentiment si je me trompe."
+    },
+    {
+      "type": "titre",
+      "voix": "Enregistre ce reel, et dis-moi en commentaire ton sujet !",
+      "pose": "pouce-leve",
+      "ecran": "Dis-moi ton sujet\nen commentaire"
+    }
+  ]
+}

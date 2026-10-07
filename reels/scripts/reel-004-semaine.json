@@ -1,0 +1,52 @@
+{
+  "id": "reel-004-semaine",
+  "preset": "loutre_cartoon",
+  "legende": "Planifie ta semaine en 5 minutes le dimanche soir 🗓️\n\n1️⃣ Le vidage de tête\n2️⃣ Le planning réaliste\n3️⃣ Le plan B\n\n📌 Enregistre pour plus tard\n💬 Tu planifies ta semaine, toi ?\n\n#IA #chatgpt #organisation #productivite #astucesIA #planning",
+  "scenes": [
+    {
+      "type": "titre",
+      "voix": "Le lundi matin, tu sais jamais par où commencer ?",
+      "pose": "profil",
+      "ecran": "Lundi matin,\npar où commencer ?"
+    },
+    {
+      "type": "titre",
+      "voix": "Cinq minutes le dimanche soir, et c'est réglé.",
+      "pose": "etincelle",
+      "ecran": "5 minutes\nle dimanche soir"
+    },
+    {
+      "type": "prompt",
+      "voix": "Un : tu vides ta tête. Tout, en vrac, sans trier.",
+      "pose": "clavier",
+      "etiquette": "PROMPT 1 · LE VIDAGE",
+      "prompt": "Voici tout ce que j'ai en tête cette semaine, en vrac. Regroupe ça en catégories et classe chaque tâche : urgent, important, ou peut attendre."
+    },
+    {
+      "type": "prompt",
+      "voix": "Deux : un planning réaliste. Le mot important, c'est réaliste.",
+      "pose": "clavier",
+      "etiquette": "PROMPT 2 · LE PLANNING",
+      "prompt": "Répartis ces tâches du lundi au vendredi. J'ai environ 3 heures de travail concentré par jour. Garde 20 % de marge pour les imprévus."
+    },
+    {
+      "type": "titre",
+      "voix": "Et là, ta semaine tient enfin dans tes journées.",
+      "pose": "emerveillee",
+      "ecran": "Une semaine\nqui tient la route"
+    },
+    {
+      "type": "prompt",
+      "voix": "Et trois : le plan B... pour le jour où tout déraille.",
+      "pose": "profil",
+      "etiquette": "PROMPT 3 · LE PLAN B",
+      "prompt": "Si je perds une demi-journée mercredi, quelles tâches je décale et lesquelles je garde absolument ? Réponds en 5 lignes maximum."
+    },
+    {
+      "type": "titre",
+      "voix": "Enregistre ce reel, et rendez-vous dimanche soir !",
+      "pose": "pouce-leve",
+      "ecran": "Rendez-vous\ndimanche soir"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "reel-008-linkedin",
+  "preset": "loutre_cartoon",
+  "legende": "Écrire un post LinkedIn qui te ressemble (sans y passer 1 h) ✍️\n\n1️⃣ Trouver l'angle\n2️⃣ Le premier jet avec ton style\n3️⃣ La relecture anti-« ça sonne IA »\n\n📌 Enregistre pour plus tard\n💬 Tu postes sur LinkedIn, toi ?\n\n#IA #chatgpt #linkedin #redaction #astucesIA #productivite",
+  "scenes": [
+    {
+      "type": "titre",
+      "voix": "Une heure pour écrire un post LinkedIn ?",
+      "pose": "profil",
+      "ecran": "1 heure pour\nun post LinkedIn ?"
+    },
+    {
+      "type": "titre",
+      "voix": "Trois prompts... et surtout, il te ressemble.",
+      "pose": "etincelle",
+      "ecran": "3 prompts\net il te ressemble"
+    },
+    {
+      "type": "prompt",
+      "voix": "Un : l'angle. Tu racontes ton idée en vrac.",
+      "pose": "clavier",
+      "etiquette": "PROMPT 1 · L'ANGLE",
+      "prompt": "Voici mon idée en vrac. Propose-moi 3 angles différents pour un post LinkedIn, avec pour chacun une première phrase accrocheuse."
+    },
+    {
+      "type": "prompt",
+      "voix": "Deux : tu lui donnes ton style. C'est la clé.",
+      "pose": "clavier",
+      "etiquette": "PROMPT 2 · TON STYLE",
+      "prompt": "Voici 2 posts que j'ai écrits. Imite mon ton et ma longueur de phrases pour rédiger le post avec l'angle 2. Pas d'emojis en début de ligne."
+    },
+    {
+      "type": "titre",
+      "voix": "Et là, personne ne devine que t'as été aidé.",
+      "pose": "emerveillee",
+      "ecran": "Personne\nne devine rien"
+    },
+    {
+      "type": "prompt",
+      "voix": "Et trois : la relecture anti, ça sonne I.A.",
+      "pose": "profil",
+      "etiquette": "PROMPT 3 · LA RELECTURE",
+      "prompt": "Relis ce post et souligne toutes les formulations qui sonnent artificielles ou trop génériques. Propose une version plus naturelle pour chacune."
+    },
+    {
+      "type": "titre",
+      "voix": "Enregistre ce reel pour ton prochain post !",
+      "pose": "pouce-leve",
+      "ecran": "Enregistre\npour ton prochain post"
+    }
+  ]
+}
