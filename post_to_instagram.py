@@ -121,13 +121,22 @@ def facebook_caption(caption: str) -> str:
 
 def publish_facebook(page_id: str, user_token: str, image_url: str, caption: str) -> str:
     # Le token utilisateur permet d'obtenir le token de la Page, requis pour publier
-    # On passe par /me/accounts : renvoie les Pages accessibles avec leur token
-    accounts = http_get(f"{GRAPH_BASE}/me/accounts", {"fields": "id,name,access_token", "access_token": user_token})
+    # On passe par /me/accounts : renvoie les Pages accessibles avec leur token.
+    # La Page est retrouvée par son ID, ou à défaut par le compte Instagram qui lui est relié.
+    accounts = http_get(
+        f"{GRAPH_BASE}/me/accounts",
+        {"fields": "id,name,access_token,instagram_business_account", "access_token": user_token},
+    )
     pages = accounts.get("data", [])
-    page_token = next((pg.get("access_token") for pg in pages if pg.get("id") == page_id.strip()), None)
-    if not page_token:
+    wanted = (page_id or "").strip().strip('"').strip("'")
+    ig_user_id = os.environ.get("IG_USER_ID", "").strip()
+    page = next((pg for pg in pages if pg.get("id") == wanted), None) or next(
+        (pg for pg in pages if (pg.get("instagram_business_account") or {}).get("id") == ig_user_id), None
+    )
+    if not page or not page.get("access_token"):
         visibles = [(pg.get("id"), pg.get("name")) for pg in pages]
-        raise RuntimeError(f"Page {page_id.strip()} absente des Pages accessibles par le token : {visibles}")
+        raise RuntimeError(f"Page introuvable parmi les Pages accessibles par le token : {visibles}")
+    page_id, page_token = page["id"], page["access_token"]
     resp = http_post(
         f"{GRAPH_BASE}/{page_id}/photos",
         {"url": image_url, "message": facebook_caption(caption), "access_token": page_token},
@@ -188,8 +197,8 @@ def main() -> int:
     print(f"Publié avec succès. ID média Instagram : {media_id}")
 
     # Facebook : un échec ici ne bloque pas Instagram (déjà publié)
-    page_id = os.environ.get("FB_PAGE_ID")
-    if page_id:
+    page_id = os.environ.get("FB_PAGE_ID", "")
+    if os.environ.get("FB_DISABLED") != "1":
         try:
             fb_id = publish_facebook(page_id, access_token, next_post["image_url"], next_post["caption"])
             next_post["facebook_post_id"] = fb_id
