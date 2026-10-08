@@ -1,8 +1,10 @@
 [
   {
     "id": "reel-001-mails",
-    "status": "pending",
-    "tentatives": 1
+    "status": "published",
+    "tentatives": 1,
+    "instagram_media_id": "18076447784431248",
+    "facebook_video_id": "1093786263380934"
   },
   {
     "id": "reel-002-reunions",
