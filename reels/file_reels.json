@@ -15,7 +15,10 @@
   },
   {
     "id": "reel-003-pdf",
-    "status": "pending"
+    "status": "published",
+    "instagram_media_id": "18431090041145980",
+    "facebook_video_id": "2620867781688975",
+    "tiktok_error": "Erreur API (404) sur https://api.bundle.social/api/v1/upload : {\"statusCode\":404,\"message\":\"No team found\"}"
   },
   {
     "id": "reel-004-semaine",
