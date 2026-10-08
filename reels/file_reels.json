@@ -8,7 +8,10 @@
   },
   {
     "id": "reel-002-reunions",
-    "status": "pending"
+    "status": "published",
+    "instagram_media_id": "18113545712116158",
+    "facebook_video_id": "1418977899612393",
+    "tiktok_error": "Erreur API (403) sur https://api.bundle.social/api/v1/upload : error code: 1010\n"
   },
   {
     "id": "reel-003-pdf",
