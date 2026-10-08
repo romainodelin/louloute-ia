@@ -23,7 +23,7 @@ W, H, FPS = 1080, 1920, 30
 FOND = (19, 33, 60)
 NUIT2 = (30, 44, 78)
 ROSE, JAUNE, BLANC, GRIS = (255, 122, 156), (255, 216, 77), (246, 245, 250), (163, 167, 188)
-PAUSE_SCENE = 0.35
+PAUSE_SCENE = 0.6
 Y_SOUS_TITRE = 1040          # bande des sous-titres (au-dessus de Louloutre)
 
 def _ffmpeg():
@@ -52,7 +52,7 @@ async def _tts(texte, voix, vitesse, sortie, hauteur="-2Hz"):
 
 # Voix de Louloutre (choisir avec "preset" dans le script, ou REEL_PRESET=... en ligne de commande)
 PRESETS = {
-    "loutre_cartoon": {"voix": "fr-FR-VivienneMultilingualNeural", "vitesse": "+2%", "hauteur": 0, "effet": 1.10},
+    "loutre_cartoon": {"voix": "fr-FR-VivienneMultilingualNeural", "vitesse": "-5%", "hauteur": 0, "effet": 1.10},
     "loutre_eloise":  {"voix": "fr-FR-EloiseNeural", "vitesse": "-4%", "hauteur": -4, "effet": None},
 }
 
@@ -63,9 +63,9 @@ def prosodie(i, n, sc, vitesse_base, hauteur_base=-2):
     accroche plus énergique, prompts posés, fin plus chaleureuse."""
     if "ton" in sc: v, h = sc["ton"].get("vitesse", vitesse_base), sc["ton"].get("hauteur", "-2Hz"); return v, h
     base = _pct(vitesse_base); rnd = random.Random(i * 7 + 1)
-    if i == 0:                  dv, dh = 7, 3      # accroche : plus vive, un peu plus haute
+    if i == 0:                  dv, dh = 4, 3      # accroche : plus vive, un peu plus haute
     elif i == n - 1:            dv, dh = -3, -1    # appel à l'action : plus posé
-    elif sc.get("type") == "prompt": dv, dh = -2, -3
+    elif sc.get("type") in ("prompt", "resultat"): dv, dh = -3, -3
     else:                       dv, dh = rnd.randint(-2, 4), rnd.randint(-3, 2)
     return f"{base + dv:+d}%", f"{dh + hauteur_base:+d}Hz"
 
@@ -153,19 +153,19 @@ def lignes_titre(texte, taille_max=112, marge=140):
         res.append(im)
     return res, t
 
-def carte_prompt(etiquette, texte):
+def carte_prompt(etiquette, texte, style="prompt"):
     """Fond de la carte + lignes de texte (le texte est tapé progressivement au rendu)."""
     c = Image.new("RGBA", (W, 720), (0, 0, 0, 0)); d = ImageDraw.Draw(c)
     fe = police(GRAS, 38); lw = d.textlength(etiquette, font=fe)
-    d.rounded_rectangle((70, 40, 70 + lw + 50, 110), 35, fill=ROSE)
+    d.rounded_rectangle((70, 40, 70 + lw + 50, 110), 35, fill=ROSE if style == "prompt" else JAUNE)
     d.text((95, 50), etiquette, font=fe, fill=FOND)
     t = 46
     while t > 30:
-        f = police(MONO, t); lignes = renvoi_ligne(d, texte, f, W - 260)
+        f = police(MONO if style == "prompt" else MOYEN, t); lignes = renvoi_ligne(d, texte, f, W - 260)
         if len(lignes) * t * 1.35 < 520: break
         t -= 2
-    h = int(len(lignes) * t * 1.35 + 90)
-    d.rounded_rectangle((70, 140, W - 70, 140 + h), 36, fill=BLANC)
+    h = int(len(lignes) * t * 1.35 + (90 if style == "prompt" else 130))
+    d.rounded_rectangle((70, 140, W - 70, 140 + h), 36, fill=BLANC if style == "prompt" else NUIT2, outline=None if style == "prompt" else JAUNE, width=4)
     d.ellipse((110, 172, 130, 192), fill=ROSE); d.ellipse((142, 172, 162, 192), fill=JAUNE); d.ellipse((174, 172, 194, 192), fill=(120, 200, 150))
     return c, lignes, f, t
 
@@ -197,7 +197,7 @@ def image(t, scenes, groupes, duree):
     sortie = 1 - ease((local - (long - 0.15)) / 0.15) if i < len(scenes) - 1 else 1
 
     # --- Louloutre : entre en glissant (côté alterné), pop, flottement
-    taille = 640 if sc.get("type") == "prompt" else 760
+    taille = 640 if sc.get("type") in ("prompt", "resultat") else 760
     p, m = pose(sc.get("pose", "profil"), taille)
     entree_l = 1 if accroche else ease(local / 0.4)
     cote = -1 if i % 2 else 1
@@ -209,18 +209,18 @@ def image(t, scenes, groupes, duree):
     img.paste(p, (x - (tz - taille) // 2, H - 60 - tz + y_flot), m)
 
     # --- Contenu
-    if sc.get("type") == "prompt":
-        if "_carte" not in sc: sc["_carte"] = carte_prompt(sc.get("etiquette", "PROMPT"), sc["prompt"])
+    if sc.get("type") in ("prompt", "resultat"):
+        if "_carte" not in sc: sc["_carte"] = carte_prompt(sc.get("etiquette", "PROMPT"), sc.get("prompt") or sc.get("texte", ""), sc["type"])
         carte, lignes, f, tl = sc["_carte"]
         e = ease(local / 0.35)
         bloc = Image.new("RGBA", (W, 720), (0, 0, 0, 0)); bloc.paste(carte, (0, 0))
         dd = ImageDraw.Draw(bloc)
         total = sum(len(l) for l in lignes)
-        tape = int(total * min(1, max(0, local - 0.3) / max(0.8, min(2.6, long * 0.6))))   # effet machine à écrire
+        tape = int(total * min(1, max(0, local - 0.3) / max(1.0, min(3.2, long * 0.65))))   # effet machine à écrire
         y, reste = 215, tape
         for l in lignes:
             part = l[:max(0, reste)]; reste -= len(l)
-            dd.text((120, y), part, font=f, fill=FOND)
+            dd.text((120, y), part, font=f, fill=FOND if sc["type"] == "prompt" else BLANC)
             if 0 <= reste + len(l) - len(part) and len(part) < len(l) and int(t * 3) % 2 == 0:
                 cx = 120 + dd.textlength(part, font=f); dd.rectangle((cx + 2, y + 4, cx + 6, y + tl), fill=ROSE)
             y += tl * 1.35
@@ -260,7 +260,7 @@ def image(t, scenes, groupes, duree):
         fs = police(GRAS, 64)
         mots = [m for _, _, m in g]
         x = (W - d.textlength(" ".join(mots), font=fs)) / 2
-        y = Y_SOUS_TITRE + (90 if sc.get("type") == "prompt" else 0)
+        y = Y_SOUS_TITRE + (90 if sc.get("type") in ("prompt", "resultat") else 0)
         for (a, b, mot) in g:
             lw = d.textlength(mot, font=fs); actif = a <= t < b
             if actif:

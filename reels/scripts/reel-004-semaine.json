@@ -1,52 +1,52 @@
 {
   "id": "reel-004-semaine",
   "preset": "loutre_cartoon",
-  "legende": "Planifie ta semaine en 5 minutes le dimanche soir 🗓️\n\n1️⃣ Le vidage de tête\n2️⃣ Le planning réaliste\n3️⃣ Le plan B\n\n📌 Enregistre pour plus tard\n💬 Tu planifies ta semaine, toi ?\n\n#IA #chatgpt #organisation #productivite #astucesIA #planning",
+  "legende": "Ta to-do list ne finit jamais ? Le problème n'est pas la liste, c'est le temps 🗓️\n\nLe dimanche soir, donne à l'IA tes tâches ET tes vraies contraintes : elle estime, répartit, et te dit franchement ce qui ne rentre pas.\n\n🔁 Bonus : le bilan de 2 minutes du vendredi\n\n📌 Enregistre pour dimanche soir\n💬 Tu planifies ta semaine, toi ?\n\n#IA #chatgpt #organisation #productivite #astucesIA #planning",
   "scenes": [
     {
       "type": "titre",
-      "voix": "Le lundi matin, tu sais jamais par où commencer ?",
-      "pose": "profil",
-      "ecran": "Lundi matin,\npar où commencer ?"
+      "voix": "Ta to-do list ne finit jamais ?",
+      "ecran": "Ta to-do list\nne finit jamais ?",
+      "pose": "profil"
     },
     {
       "type": "titre",
-      "voix": "Cinq minutes le dimanche soir, et c'est réglé.",
-      "pose": "etincelle",
-      "ecran": "5 minutes\nle dimanche soir"
+      "voix": "Normal : tu listes tout... mais tu ne prévois jamais le temps que ça prend vraiment.",
+      "ecran": "Le vrai problème :\nle temps",
+      "pose": "etincelle"
     },
     {
       "type": "prompt",
-      "voix": "Un : tu vides ta tête. Tout, en vrac, sans trier.",
-      "pose": "clavier",
-      "etiquette": "PROMPT 1 · LE VIDAGE",
-      "prompt": "Voici tout ce que j'ai en tête cette semaine, en vrac. Regroupe ça en catégories et classe chaque tâche : urgent, important, ou peut attendre."
+      "voix": "Le dimanche soir, tu colles ta liste, avec tes vraies contraintes.",
+      "etiquette": "LE PROMPT DU DIMANCHE",
+      "prompt": "Voici mes tâches de la semaine. J'ai 3 h de travail concentré par jour, et des réunions mardi et jeudi. Estime la durée de chaque tâche, répartis-les du lundi au vendredi avec 1 h de marge par jour, et dis-moi ce qui ne rentre pas.",
+      "pose": "clavier"
     },
     {
-      "type": "prompt",
-      "voix": "Deux : un planning réaliste. Le mot important, c'est réaliste.",
-      "pose": "clavier",
-      "etiquette": "PROMPT 2 · LE PLANNING",
-      "prompt": "Répartis ces tâches du lundi au vendredi. J'ai environ 3 heures de travail concentré par jour. Garde 20 % de marge pour les imprévus."
+      "type": "resultat",
+      "voix": "Et là, elle te dit franchement ce qui ne rentre pas. C'est ça, la vraie info.",
+      "etiquette": "EXEMPLE DE RÉPONSE",
+      "texte": "Lundi : dossier client (2 h), mails (45 min)\nMardi : préparation de la réunion (1 h)\n...\nNE RENTRE PAS : refonte du site (6 h estimées). À décaler ou à déléguer.",
+      "pose": "emerveillee"
     },
     {
       "type": "titre",
-      "voix": "Et là, ta semaine tient enfin dans tes journées.",
-      "pose": "emerveillee",
-      "ecran": "Une semaine\nqui tient la route"
+      "voix": "Pourquoi ça marche ? Parce que tu planifies avec ton temps réel... pas avec tes envies.",
+      "ecran": "Planifier avec\nton temps réel",
+      "pose": "profil"
     },
     {
       "type": "prompt",
-      "voix": "Et trois : le plan B... pour le jour où tout déraille.",
-      "pose": "profil",
-      "etiquette": "PROMPT 3 · LE PLAN B",
-      "prompt": "Si je perds une demi-journée mercredi, quelles tâches je décale et lesquelles je garde absolument ? Réponds en 5 lignes maximum."
+      "voix": "Et chaque vendredi, deux minutes pour t'améliorer.",
+      "etiquette": "LE BILAN DU VENDREDI",
+      "prompt": "Voici ce que j'ai vraiment fait cette semaine. Qu'est-ce que j'ai sous-estimé, et qu'est-ce que je dois changer la semaine prochaine ?",
+      "pose": "clavier"
     },
     {
       "type": "titre",
       "voix": "Enregistre ce reel, et rendez-vous dimanche soir !",
-      "pose": "pouce-leve",
-      "ecran": "Rendez-vous\ndimanche soir"
+      "ecran": "Rendez-vous\ndimanche soir",
+      "pose": "pouce-leve"
     }
   ]
 }

@@ -1,52 +1,52 @@
 {
   "id": "reel-003-pdf",
   "preset": "loutre_cartoon",
-  "legende": "Un PDF de 40 pages ? Lis l'essentiel en 2 minutes 📄\n\n1️⃣ Le résumé en 5 points\n2️⃣ Les questions qu'il faut poser\n3️⃣ La vérification des sources\n\n📌 Enregistre pour plus tard\n💬 C'est quoi le dernier doc trop long que tu as reçu ?\n\n#IA #chatgpt #productivite #lecture #astucesIA #gaindetemps",
+  "legende": "Arrête de demander « résume ce PDF » 📄\n\nDonne à l'IA le contexte de ta lecture : pourquoi tu lis, et ce que tu dois décider. Le résumé devient enfin utile.\n\n✅ Le prompt complet est dans la vidéo\n🔁 Le réflexe bonus : « qu'est-ce que tu as pu rater ? »\n\n📌 Enregistre pour ton prochain document\n💬 Quel document tu vas tester ?\n\n#IA #chatgpt #productivite #astucesIA #gaindetemps",
   "scenes": [
     {
       "type": "titre",
-      "voix": "Un PDF de quarante pages à lire pour demain ?",
-      "pose": "profil",
-      "ecran": "Un PDF de 40 pages\npour demain ?"
+      "voix": "Tu demandes à l'I.A. de résumer un PDF ?",
+      "ecran": "Tu demandes juste\n« résume ce PDF » ?",
+      "pose": "profil"
     },
     {
       "type": "titre",
-      "voix": "T'inquiète... trois prompts, et t'as l'essentiel.",
-      "pose": "etincelle",
-      "ecran": "3 prompts\n= l'essentiel"
+      "voix": "Le problème, c'est qu'elle te sort un résumé vague... sans savoir ce qui compte pour toi.",
+      "ecran": "Résultat :\nun résumé vague",
+      "pose": "etincelle"
     },
     {
       "type": "prompt",
-      "voix": "Un : tu glisses le PDF, et tu demandes le résumé utile.",
-      "pose": "clavier",
-      "etiquette": "PROMPT 1 · L'ESSENTIEL",
-      "prompt": "Résume ce document en 5 points. Pour chaque point, indique la page où il se trouve. Termine par ce que je dois retenir si je n'ai qu'une minute."
+      "voix": "Essaie plutôt celui-là. Tu lui dis pourquoi tu lis, et ce que tu dois en faire.",
+      "etiquette": "LE BON PROMPT",
+      "prompt": "Je dois décider demain si on signe ce contrat. Résume-le en 5 points utiles pour cette décision : risques, coûts, engagements, dates clés, points à négocier. Indique la page de chaque point.",
+      "pose": "clavier"
     },
     {
-      "type": "prompt",
-      "voix": "Deux : tu le fais travailler pour toi.",
-      "pose": "clavier",
-      "etiquette": "PROMPT 2 · LES BONNES QUESTIONS",
-      "prompt": "Quelles sont les 3 questions les plus importantes à poser à l'auteur de ce document ? Explique pourquoi chacune compte."
+      "type": "resultat",
+      "voix": "Et là, la réponse n'a plus rien à voir. Chaque point est concret, et tu sais où vérifier.",
+      "etiquette": "EXEMPLE DE RÉPONSE",
+      "texte": "1. Risque : pénalité de 15 % en cas de retard (p. 7)\n2. Coût : prix révisé chaque année (p. 4)\n3. Engagement : 24 mois minimum (p. 2)\n4. À négocier : le délai de préavis (p. 9)",
+      "pose": "emerveillee"
     },
     {
       "type": "titre",
-      "voix": "Et là, en réunion, t'as l'air d'avoir tout lu.",
-      "pose": "emerveillee",
-      "ecran": "T'as l'air\nd'avoir tout lu"
+      "voix": "Pourquoi ça marche ? Parce que l'I.A. sait enfin à quoi sert ton résumé. Le contexte, ça change tout.",
+      "ecran": "Le secret :\ndonner le contexte",
+      "pose": "profil"
     },
     {
       "type": "prompt",
-      "voix": "Et trois, le plus important : tu vérifies. L'I.A. peut se tromper.",
-      "pose": "profil",
-      "etiquette": "PROMPT 3 · LA VÉRIF",
-      "prompt": "Pour chaque point de ton résumé, cite la phrase exacte du document qui le justifie. Si tu n'en trouves pas, dis-le."
+      "voix": "Et le réflexe à garder... tu lui demandes ce qu'elle a pu rater.",
+      "etiquette": "LE RÉFLEXE BONUS",
+      "prompt": "Qu'est-ce qui, dans ce document, pourrait me poser problème et que tu n'as pas mis dans ton résumé ?",
+      "pose": "clavier"
     },
     {
       "type": "titre",
-      "voix": "Enregistre ce reel, et ton prochain PDF te fera plus peur.",
-      "pose": "pouce-leve",
-      "ecran": "Enregistre\npour ton prochain PDF"
+      "voix": "Enregistre ce reel pour ton prochain document. Et abonne-toi pour la prochaine astuce !",
+      "ecran": "Enregistre\net abonne-toi",
+      "pose": "pouce-leve"
     }
   ]
 }

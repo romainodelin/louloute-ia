@@ -20,16 +20,19 @@ Voix officielle de Louloutre : preset `loutre_cartoon` (Vivienne Multilingual, t
 - `...` = pause dramatique, `,` = respiration. Pas d'emoji ni d'abréviation dans le texte lu.
 - Le texte à l'écran (`ecran`) ≠ texte lu : 2 lignes max, la 2ᵉ ligne (en jaune) porte le bénéfice.
 
-## Structure type (7 scènes)
+## Structure type : UNE idée, bien creusée (7 scènes, 35-45 s)
 | # | type | rôle | pose |
 |---|------|------|------|
 | 1 | titre | Accroche ≤ 3 s : le problème, en question | profil |
-| 1b | titre | Promesse chiffrée (« 3 prompts = 10 min ») | etincelle |
-| 2 | prompt | Astuce 1 | clavier |
-| 3 | titre | Résultat de l'astuce 1 | emerveillee |
-| 4 | prompt | Astuce 2 | clavier |
-| 5 | prompt | Astuce 3 (« la moins connue ») | profil |
-| 6 | titre | Appel à l'action | pouce-leve |
+| 2 | titre | Pourquoi l'approche habituelle ne marche pas | etincelle |
+| 3 | prompt | LE bon prompt, complet et copiable (contexte + objectif + format) | clavier |
+| 4 | resultat | Extrait d'exemple de réponse (étiquette « EXEMPLE DE RÉPONSE ») | emerveillee |
+| 5 | titre | « Pourquoi ça marche ? » : le principe à retenir | profil |
+| 6 | prompt | Le réflexe / prompt bonus | clavier |
+| 7 | titre | Appel à l'action (enregistrer, commenter, s'abonner) | pouce-leve |
+
+Scène `resultat` : `{"type": "resultat", "voix": "...", "etiquette": "EXEMPLE DE RÉPONSE", "texte": "..."}`.
+La légende reprend l'idée + le principe, pas juste la liste des prompts.
 
 ## Idées de sujets
 Mails · réunions (compte-rendu en 1 prompt) · préparer un entretien · résumer un PDF · planifier sa semaine · apprendre une notion en 5 min · écrire un post LinkedIn · négocier · cuisiner avec ce qu'il reste dans le frigo · organiser un voyage.

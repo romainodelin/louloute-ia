@@ -1,52 +1,52 @@
 {
   "id": "reel-008-linkedin",
   "preset": "loutre_cartoon",
-  "legende": "Écrire un post LinkedIn qui te ressemble (sans y passer 1 h) ✍️\n\n1️⃣ Trouver l'angle\n2️⃣ Le premier jet avec ton style\n3️⃣ La relecture anti-« ça sonne IA »\n\n📌 Enregistre pour plus tard\n💬 Tu postes sur LinkedIn, toi ?\n\n#IA #chatgpt #linkedin #redaction #astucesIA #productivite",
+  "legende": "Ton post LinkedIn sonne « IA » ? Montre-lui ton style ✍️\n\nColle 2 de tes anciens posts : l'IA analyse ton ton, ta longueur de phrases, ta façon de commencer… et écrit dans TON style.\n\n🔁 Bonus : la relecture anti-« ça sonne IA »\n\n📌 Enregistre pour ton prochain post\n💬 Tu postes sur LinkedIn, toi ?\n\n#IA #chatgpt #linkedin #redaction #astucesIA #productivite",
   "scenes": [
     {
       "type": "titre",
-      "voix": "Une heure pour écrire un post LinkedIn ?",
-      "pose": "profil",
-      "ecran": "1 heure pour\nun post LinkedIn ?"
+      "voix": "Tes posts LinkedIn sonnent trop I.A. ?",
+      "ecran": "Ton post LinkedIn\nsonne trop IA ?",
+      "pose": "profil"
     },
     {
       "type": "titre",
-      "voix": "Trois prompts... et surtout, il te ressemble.",
-      "pose": "etincelle",
-      "ecran": "3 prompts\net il te ressemble"
+      "voix": "Normal : si tu demandes juste, écris-moi un post, tu obtiens le même texte que tout le monde.",
+      "ecran": "Même prompt,\nmême texte pour tous",
+      "pose": "etincelle"
     },
     {
       "type": "prompt",
-      "voix": "Un : l'angle. Tu racontes ton idée en vrac.",
-      "pose": "clavier",
-      "etiquette": "PROMPT 1 · L'ANGLE",
-      "prompt": "Voici mon idée en vrac. Propose-moi 3 angles différents pour un post LinkedIn, avec pour chacun une première phrase accrocheuse."
+      "voix": "La solution : lui montrer ton style. Tu colles deux de tes anciens posts.",
+      "etiquette": "LE PROMPT STYLE",
+      "prompt": "Voici 2 posts que j'ai écrits. Analyse mon style : longueur des phrases, ton, façon de commencer. Puis écris un post sur [mon sujet] dans ce style exact. Pas de formules toutes faites, pas d'emojis en début de ligne.",
+      "pose": "clavier"
     },
     {
-      "type": "prompt",
-      "voix": "Deux : tu lui donnes ton style. C'est la clé.",
-      "pose": "clavier",
-      "etiquette": "PROMPT 2 · TON STYLE",
-      "prompt": "Voici 2 posts que j'ai écrits. Imite mon ton et ma longueur de phrases pour rédiger le post avec l'angle 2. Pas d'emojis en début de ligne."
+      "type": "resultat",
+      "voix": "Et le résultat te ressemble enfin.",
+      "etiquette": "EXEMPLE DE RÉPONSE",
+      "texte": "La semaine dernière, j'ai raté une présentation.\nPas à cause du fond. À cause de la forme.\nVoici les 3 choses que je change dès lundi.",
+      "pose": "emerveillee"
     },
     {
       "type": "titre",
-      "voix": "Et là, personne ne devine que t'as été aidé.",
-      "pose": "emerveillee",
-      "ecran": "Personne\nne devine rien"
+      "voix": "Pourquoi ça marche ? Parce que l'I.A. imite très bien... à condition de lui montrer qui imiter.",
+      "ecran": "Montre-lui\nqui imiter",
+      "pose": "profil"
     },
     {
       "type": "prompt",
-      "voix": "Et trois : la relecture anti, ça sonne I.A.",
-      "pose": "profil",
-      "etiquette": "PROMPT 3 · LA RELECTURE",
-      "prompt": "Relis ce post et souligne toutes les formulations qui sonnent artificielles ou trop génériques. Propose une version plus naturelle pour chacune."
+      "voix": "Et avant de publier, une dernière vérification.",
+      "etiquette": "LA RELECTURE",
+      "prompt": "Relis ce post et souligne les phrases qui sonnent artificielles ou trop génériques. Propose une version plus naturelle pour chacune.",
+      "pose": "clavier"
     },
     {
       "type": "titre",
       "voix": "Enregistre ce reel pour ton prochain post !",
-      "pose": "pouce-leve",
-      "ecran": "Enregistre\npour ton prochain post"
+      "ecran": "Enregistre\npour ton prochain post",
+      "pose": "pouce-leve"
     }
   ]
 }

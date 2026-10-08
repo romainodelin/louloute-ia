@@ -1,52 +1,52 @@
 {
   "id": "reel-007-frigo",
   "preset": "loutre_cartoon",
-  "legende": "Plus jamais « on mange quoi ce soir ? » 🍳\n\n1️⃣ La recette avec ce qu'il reste\n2️⃣ La version express\n3️⃣ La liste de courses de la semaine\n\n📌 Enregistre pour plus tard\n💬 C'est quoi le pire reste de ton frigo ?\n\n#IA #chatgpt #cuisine #antigaspi #astucesIA #organisation",
+  "legende": "Trois restes dans le frigo = un vrai dîner 🍳\n\nLe secret : donner à l'IA tes vraies contraintes (temps, matériel, nombre de personnes). Elle te sort une recette faisable, pas une recette de chef.\n\n🔁 Bonus : 5 dîners de la semaine + la liste de courses par rayon\n\n📌 Enregistre pour ce soir\n💬 C'est quoi le pire reste de ton frigo ?\n\n#IA #chatgpt #cuisine #antigaspi #astucesIA #organisation",
   "scenes": [
     {
       "type": "titre",
       "voix": "Ce soir, on mange quoi ?",
-      "pose": "profil",
-      "ecran": "Ce soir,\non mange quoi ?"
+      "ecran": "Ce soir,\non mange quoi ?",
+      "pose": "profil"
     },
     {
       "type": "titre",
-      "voix": "Ouvre ton frigo... l'I.A. s'occupe du reste.",
-      "pose": "etincelle",
-      "ecran": "Ouvre ton frigo,\nl'IA fait le reste"
+      "voix": "Tu ouvres le frigo... et il reste trois trucs qui ne vont pas du tout ensemble.",
+      "ecran": "Trois restes\nqui vont pas ensemble",
+      "pose": "etincelle"
     },
     {
       "type": "prompt",
-      "voix": "Un : tu listes ce qu'il te reste. Même les trucs bizarres.",
-      "pose": "clavier",
-      "etiquette": "PROMPT 1 · LES RESTES",
-      "prompt": "Il me reste : 2 courgettes, 3 œufs, du riz, un fond de crème. Propose 3 recettes simples avec ça, sans rien acheter."
+      "voix": "Tu les donnes à l'I.A., avec tes vraies contraintes.",
+      "etiquette": "LE PROMPT ANTI-GASPI",
+      "prompt": "Il me reste 2 courgettes, 3 œufs, du riz cuit et un fond de crème. Propose-moi un plat pour 2, prêt en 20 minutes, avec une seule poêle. Donne des étapes très simples.",
+      "pose": "clavier"
     },
     {
-      "type": "prompt",
-      "voix": "Deux : t'as pas le temps ? Tu le dis.",
-      "pose": "clavier",
-      "etiquette": "PROMPT 2 · EXPRESS",
-      "prompt": "Choisis la recette la plus rapide et donne-la en 5 étapes, prête en 20 minutes maximum, avec une seule poêle."
+      "type": "resultat",
+      "voix": "Et en quelques secondes, t'as une vraie recette.",
+      "etiquette": "EXEMPLE DE RÉPONSE",
+      "texte": "Riz sauté aux courgettes et œufs crémeux\n1. Coupe les courgettes en dés, fais-les dorer 5 min.\n2. Ajoute le riz, puis les œufs battus avec la crème.\n3. Mélange 2 min, sale, poivre. C'est prêt.",
+      "pose": "emerveillee"
     },
     {
       "type": "titre",
-      "voix": "Et là, zéro gaspi, et le dîner est prêt.",
-      "pose": "emerveillee",
-      "ecran": "Zéro gaspi,\ndîner prêt"
+      "voix": "Pourquoi ça marche ? Parce que tu donnes tes vraies contraintes : le temps, le matériel, et pour combien de personnes.",
+      "ecran": "Le secret :\ntes vraies contraintes",
+      "pose": "profil"
     },
     {
       "type": "prompt",
-      "voix": "Et trois : tu anticipes toute la semaine.",
-      "pose": "profil",
-      "etiquette": "PROMPT 3 · LA SEMAINE",
-      "prompt": "Propose 5 dîners simples pour la semaine et la liste de courses correspondante, classée par rayon du supermarché."
+      "voix": "Et pour toute la semaine, c'est encore mieux.",
+      "etiquette": "LE BONUS SEMAINE",
+      "prompt": "Propose 5 dîners simples pour la semaine qui réutilisent les mêmes ingrédients, puis la liste de courses classée par rayon.",
+      "pose": "clavier"
     },
     {
       "type": "titre",
       "voix": "Enregistre ce reel, ton toi de vingt heures te remerciera.",
-      "pose": "pouce-leve",
-      "ecran": "Ton toi de 20 h\nte remerciera"
+      "ecran": "Ton toi de 20 h\nte remerciera",
+      "pose": "pouce-leve"
     }
   ]
 }

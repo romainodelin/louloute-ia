@@ -24,7 +24,8 @@ LOG = ICI / "journal_reels.json"
 
 def _req(url, data=None, headers=None, method=None):
     if isinstance(data, dict): data = parse.urlencode(data).encode()
-    r = request.Request(url, data=data, headers=headers or {}, method=method or ("POST" if data is not None else "GET"))
+    headers = {"User-Agent": "Mozilla/5.0 (louloute-reels/1.0)", **(headers or {})}   # sans ça, Cloudflare (bundle.social) refuse : erreur 1010
+    r = request.Request(url, data=data, headers=headers, method=method or ("POST" if data is not None else "GET"))
     try:
         with request.urlopen(r, timeout=300) as resp: return json.loads(resp.read().decode())
     except error.HTTPError as e:

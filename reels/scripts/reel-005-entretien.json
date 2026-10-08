@@ -1,52 +1,52 @@
 {
   "id": "reel-005-entretien",
   "preset": "loutre_cartoon",
-  "legende": "Prépare ton entretien avec l'IA comme un pro 🎯\n\n1️⃣ Les questions probables\n2️⃣ La simulation d'entretien\n3️⃣ Tes questions à toi\n\n📌 Enregistre pour plus tard\n💬 Tu as un entretien bientôt ?\n\n#IA #chatgpt #entretien #emploi #astucesIA #carriere",
+  "legende": "Ton prochain entretien, répète-le avec l'IA 🎯\n\nTransforme l'IA en recruteur exigeant : une question à la fois, une note sur 10, et un conseil précis après chaque réponse.\n\n🔁 Bonus : les 3 questions à poser au recruteur\n\n📌 Enregistre avant ton entretien\n💬 Tu as un entretien bientôt ?\n\n#IA #chatgpt #entretien #emploi #astucesIA #carriere",
   "scenes": [
     {
       "type": "titre",
-      "voix": "Un entretien d'embauche cette semaine ?",
-      "pose": "profil",
-      "ecran": "Un entretien\ncette semaine ?"
+      "voix": "Tu prépares un entretien d'embauche ?",
+      "ecran": "Un entretien\nbientôt ?",
+      "pose": "profil"
     },
     {
       "type": "titre",
-      "voix": "Utilise l'I.A. comme coach. Trois prompts.",
-      "pose": "etincelle",
-      "ecran": "L'IA comme\ncoach d'entretien"
+      "voix": "Relire ses notes, ça ne suffit pas. Ce qui fait la différence... c'est de s'entraîner à voix haute.",
+      "ecran": "Relire ne suffit pas :\nentraîne-toi",
+      "pose": "etincelle"
     },
     {
       "type": "prompt",
-      "voix": "Un : tu colles l'offre d'emploi, et tu demandes ça.",
-      "pose": "clavier",
-      "etiquette": "PROMPT 1 · LES QUESTIONS",
-      "prompt": "À partir de cette offre, liste les 8 questions qu'un recruteur a le plus de chances de me poser, de la plus probable à la moins probable."
+      "voix": "Alors transforme l'I.A. en recruteur. Tu colles l'offre, et tu lances ça.",
+      "etiquette": "LE PROMPT RECRUTEUR",
+      "prompt": "Tu es le recruteur pour ce poste. Pose-moi une question à la fois, comme en vrai entretien. Après chaque réponse, note-la sur 10 et dis-moi précisément quoi améliorer. Commence par la question la plus difficile.",
+      "pose": "clavier"
     },
     {
-      "type": "prompt",
-      "voix": "Deux : tu t'entraînes. Pour de vrai.",
-      "pose": "clavier",
-      "etiquette": "PROMPT 2 · LA SIMULATION",
-      "prompt": "Joue le recruteur. Pose-moi une question à la fois, attends ma réponse, puis donne-moi un retour honnête : ce qui marche, ce qui manque."
+      "type": "resultat",
+      "voix": "Et le retour est vraiment utile. Pas juste un, c'est bien.",
+      "etiquette": "EXEMPLE DE RÉPONSE",
+      "texte": "Note : 6/10.\nTa réponse est sincère mais trop vague. Donne un exemple précis : la situation, ce que tu as fait, et le résultat obtenu.",
+      "pose": "emerveillee"
     },
     {
       "type": "titre",
-      "voix": "Et là, le jour J, t'as déjà répondu dix fois.",
-      "pose": "emerveillee",
-      "ecran": "Le jour J,\nt'as déjà répété"
+      "voix": "Pourquoi ça marche ? Parce que tu répètes avant le jour J. Le stress baisse, et tes exemples sont prêts.",
+      "ecran": "Le jour J,\ntu as déjà répété",
+      "pose": "profil"
     },
     {
       "type": "prompt",
-      "voix": "Et trois : tes questions à toi. Ça fait toute la différence.",
-      "pose": "profil",
-      "etiquette": "PROMPT 3 · TES QUESTIONS",
-      "prompt": "Propose 5 questions intelligentes à poser à la fin de l'entretien, qui montrent que j'ai compris les enjeux du poste."
+      "voix": "Le bonus : prépare aussi tes questions à toi.",
+      "etiquette": "LE BONUS",
+      "prompt": "Propose 3 questions à poser au recruteur, qui montrent que j'ai compris les vrais enjeux de ce poste.",
+      "pose": "clavier"
     },
     {
       "type": "titre",
       "voix": "Enregistre ce reel, et bonne chance pour ton entretien !",
-      "pose": "pouce-leve",
-      "ecran": "Enregistre\net bonne chance"
+      "ecran": "Enregistre\net bonne chance",
+      "pose": "pouce-leve"
     }
   ]
 }
