@@ -7,6 +7,7 @@ Envoi direct du fichier vidéo (upload « resumable » de Meta) : pas besoin d'h
 
 Variables d'environnement (secrets GitHub, les mêmes que pour les posts photo) :
   IG_USER_ID, IG_ACCESS_TOKEN, FB_PAGE_ID (optionnel), FB_DISABLED=1 pour couper Facebook.
+  BUNDLE_API_KEY + BUNDLE_TEAM_ID (optionnels) : publication TikTok via bundle.social.
 Options : DRY_RUN=1 -> génère la vidéo sans publier.
 """
 import json, os, re, sys, time
@@ -73,6 +74,28 @@ def publier_facebook(token, page_id, ig_id, video, legende):
                                         "description": texte, "access_token": ptoken})
     return vid
 
+# ---------- TikTok (via bundle.social, API gratuite jusqu'à 20 posts/mois) ----------
+BUNDLE = "https://api.bundle.social/api/v1"
+
+def publier_tiktok(cle, equipe, video, legende):
+    import uuid
+    frontiere = uuid.uuid4().hex
+    with open(video, "rb") as f: contenu = f.read()
+    corps = (f"--{frontiere}\r\nContent-Disposition: form-data; name=\"teamId\"\r\n\r\n{equipe}\r\n"
+             f"--{frontiere}\r\nContent-Disposition: form-data; name=\"file\"; filename=\"reel.mp4\"\r\n"
+             f"Content-Type: video/mp4\r\n\r\n").encode() + contenu + f"\r\n--{frontiere}--\r\n".encode()
+    up = _req(f"{BUNDLE}/upload", data=corps, headers={"x-api-key": cle,
+              "Content-Type": f"multipart/form-data; boundary={frontiere}"})
+    post = {"teamId": equipe, "title": legende.split("\n")[0][:90],
+            "postDate": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime(time.time() + 60)),
+            "status": "SCHEDULED", "socialAccountTypes": ["TIKTOK"],
+            "data": {"TIKTOK": {"type": "VIDEO", "text": legende[:2200], "uploadIds": [up["id"]],
+                                "privacy": "PUBLIC_TO_EVERYONE", "disableComments": False,
+                                "disableDuet": False, "disableStitch": False, "isAiGenerated": True}}}
+    r = _req(f"{BUNDLE}/post", data=json.dumps(post).encode(),
+             headers={"x-api-key": cle, "Content-Type": "application/json"})
+    return r.get("id", "ok")
+
 # ---------- Orchestration ----------
 def journal(e):
     h = json.load(open(LOG, encoding="utf-8")) if LOG.exists() else []
@@ -107,6 +130,13 @@ def main():
             print(f"✅ Facebook : {suivant['facebook_video_id']}")
         except Exception as e:
             suivant["facebook_error"] = str(e)[:300]; print(f"AVERTISSEMENT Facebook : {e}")
+    cle, equipe = os.environ.get("BUNDLE_API_KEY", "").strip(), os.environ.get("BUNDLE_TEAM_ID", "").strip()
+    if cle and equipe:
+        try:
+            suivant["tiktok_post_id"] = publier_tiktok(cle, equipe, video, legende)
+            print(f"✅ TikTok (bundle.social) : {suivant['tiktok_post_id']}")
+        except Exception as e:
+            suivant["tiktok_error"] = str(e)[:300]; print(f"AVERTISSEMENT TikTok : {e}")
     json.dump(file, open(FILE, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
     journal({"reel": suivant["id"], "status": "published", "instagram_media_id": suivant["instagram_media_id"]})
     return 0

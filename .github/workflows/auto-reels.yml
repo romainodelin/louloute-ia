@@ -1,4 +1,4 @@
-# Génère puis publie automatiquement un Reel Louloutre (Instagram + Facebook)
+# Génère puis publie automatiquement un Reel Louloutre (Instagram + Facebook + TikTok)
 # mardi, jeudi et samedi à 18h45 heure de Paris (heure d'été ; 17h45 en heure d'hiver).
 name: Auto-publication Reels
 
@@ -34,6 +34,8 @@ jobs:
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
           FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+          BUNDLE_API_KEY: ${{ secrets.BUNDLE_API_KEY }}
+          BUNDLE_TEAM_ID: ${{ secrets.BUNDLE_TEAM_ID }}
           DRY_RUN: ${{ github.event.inputs.dry_run || '0' }}
         run: python reels/publish_reel.py
 
