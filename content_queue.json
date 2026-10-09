@@ -71,9 +71,11 @@
   },
   {
     "id": "post-010",
-    "status": "pending",
+    "status": "published",
     "image_url": "https://raw.githubusercontent.com/romainodelin/louloute-ia/main/images/post-010.jpg",
-    "caption": "LLM, trois lettres qu'on voit partout. On décode 🔍\n\nLLM = Large Language Model, ou « grand modèle de langage ».\n\nIl a appris sur d'énormes quantités de textes, et il génère sa réponse en prédisant la suite, morceau par morceau. C'est le moteur derrière ChatGPT, Claude ou Gemini.\n\nPense à l'autocomplétion de ton téléphone, en version très, très entraînée.\n\nUne notion à expliquer ? Propose-la en commentaire 👇\n\n#IA #intelligenceartificielle #LLM #IAgenerative #chatgpt"
+    "caption": "LLM, trois lettres qu'on voit partout. On décode 🔍\n\nLLM = Large Language Model, ou « grand modèle de langage ».\n\nIl a appris sur d'énormes quantités de textes, et il génère sa réponse en prédisant la suite, morceau par morceau. C'est le moteur derrière ChatGPT, Claude ou Gemini.\n\nPense à l'autocomplétion de ton téléphone, en version très, très entraînée.\n\nUne notion à expliquer ? Propose-la en commentaire 👇\n\n#IA #intelligenceartificielle #LLM #IAgenerative #chatgpt",
+    "instagram_media_id": "18379631341236554",
+    "facebook_post_id": "1362880363576193_122098683819506578"
   },
   {
     "id": "post-011",
