@@ -29,7 +29,10 @@
   },
   {
     "id": "reel-005-entretien",
-    "status": "pending"
+    "status": "published",
+    "instagram_media_id": "17913857082534972",
+    "facebook_video_id": "1548789266933014",
+    "tiktok_error": "Erreur API (404) sur https://api.bundle.social/api/v1/upload : {\"statusCode\":404,\"message\":\"No team found\"}"
   },
   {
     "id": "reel-006-apprendre",
